@@ -106,6 +106,13 @@ a{color:inherit}
   background:linear-gradient(transparent 66%,#DCE8D6 66%);
 }
 .hero__lead{margin-top:12px;font-size:14.5px;line-height:1.85;color:var(--muted)}
+.hero__ach{
+  display:inline-flex;align-items:center;gap:8px;margin-top:12px;
+  background:#fff;border:1px solid var(--gold);border-radius:999px;padding:5px 14px 5px 10px;
+  font-size:12px;color:var(--green-deep);letter-spacing:.04em;
+}
+.hero__ach::before{content:"";width:16px;height:16px;border-radius:50%;background:var(--gold) url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M4 18h16l1-10-5 4-4-6-4 6-5-4z'/%3E%3C/svg%3E") center/11px no-repeat}
+.hero__ach b{font-family:"Noto Serif JP",serif;font-size:15px;font-weight:600;margin:0 2px 0 4px}
 .hero__photo{margin-top:16px;position:relative}
 .hero__photo img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 42%}
 
@@ -322,6 +329,7 @@ footer p{font-size:12px;line-height:1.9}
     <p class="hero__badge">初回のお客様限定</p>
     <h1>背中も、顔も、<br><span class="mk">隠さなくていい肌</span>へ。</h1>
     <p class="hero__lead">繰り返すニキビ・ニキビ跡・毛穴・ざらつきに。<br>天然ハーブの力で、生まれ変わる肌へ。</p>
+    <p class="hero__ach">累計来店実績 <b>15,000</b>人以上</p>
   </div>
 
   <div class="hero__photo">
