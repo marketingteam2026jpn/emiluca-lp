@@ -170,19 +170,24 @@ a{color:inherit}
 .menu__desc{font-size:14px;line-height:1.85;color:var(--text)}
 .menu__spec{font-size:12.5px;color:var(--muted);margin-top:8px}
 .menu__price{
-  margin-top:12px;padding-top:12px;border-top:1px dotted var(--sage-line);
-  display:flex;align-items:flex-end;justify-content:space-between;gap:10px;flex-wrap:wrap;
+  margin-top:12px;padding:12px 12px 14px;border-radius:10px;background:#F4F7F1;
+  text-align:center;
 }
-.menu__price .l{font-size:12.5px;color:var(--muted);line-height:1.7}
-.menu__price .l s{opacity:.9}
+.menu__price .l{
+  font-size:15px;color:var(--muted);line-height:1.4;
+  display:flex;align-items:center;justify-content:center;gap:6px;
+}
+.menu__price .l s{font-size:22px;font-weight:700;color:#7A8577;text-decoration-thickness:2px}
 .menu__price .r{
   font-family:"Noto Serif JP",serif;font-weight:600;color:var(--green-deep);
-  font-size:15px;line-height:1;text-align:right;
+  font-size:16px;line-height:1;margin-top:8px;
+  display:flex;align-items:baseline;justify-content:center;gap:8px;flex-wrap:wrap;
 }
-.menu__price .r b{font-size:33px;margin:0 1px}
+.menu__price .r b{font-size:40px;margin:0 1px;color:var(--green)}
 .menu__price .off{
   display:inline-block;background:var(--gold);color:#fff;font-family:"Noto Sans JP",sans-serif;
-  font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;margin-bottom:6px;
+  font-size:17px;font-weight:700;padding:5px 13px;border-radius:999px;letter-spacing:.02em;
+  position:relative;top:-6px;
 }
 .menu-note{font-size:13px;line-height:1.8;color:var(--muted);text-align:center;margin-top:4px}
 
@@ -197,7 +202,7 @@ a{color:inherit}
 
 /* ---------- 症例 ---------- */
 .case{background:#fff;border:1px solid var(--sage-line);border-radius:14px;overflow:hidden;margin-bottom:18px}
-.case img{width:100%}
+.case img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block}
 .case__body{padding:14px 16px 16px}
 .case__ttl{
   font-family:"Noto Serif JP",serif;font-weight:600;font-size:16.5px;line-height:1.65;
@@ -210,8 +215,9 @@ a{color:inherit}
   border-right:1px solid var(--sage-line);
 }
 .case__meta dd{flex:1}
-.grid2{columns:2;column-gap:10px}
-.grid2 img{width:100%;margin-bottom:10px;break-inside:avoid;border-radius:8px;border:1px solid var(--sage-line);background:#fff}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grid2 img:last-child:nth-child(odd){grid-column:1/-1;width:calc(50% - 5px);margin:0 auto}
+.grid2 img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:8px;border:1px solid var(--sage-line);background:#fff}
 .more-ttl{text-align:center;font-size:14px;font-weight:700;color:var(--green);margin:26px 0 14px;letter-spacing:.04em}
 
 /* ---------- お客様の声 ---------- */
@@ -378,8 +384,8 @@ footer p{font-size:12px;line-height:1.9}
       <p class="menu__desc">繰り返す背中ニキビ、ニキビ跡、ぶつぶつ・ざらつきに。泡パックで毛穴の汚れを落とし、美容液を届けたあと、肌質に合わせて調合したハーブを導入。仕上げに鎮静パックまで行います。</p>
       <p class="menu__spec">施術時間 50分〜／襟足・うなじ〜背中全体</p>
       <div class="menu__price">
-        <p class="l">通常価格<br><s>22,000円</s></p>
-        <p class="r"><span class="off">56%OFF</span><br>初回<b>9,600</b>円<span style="font-size:12px">(税込)</span></p>
+        <p class="l">通常価格 <s>22,000円</s></p>
+        <p class="r"><span class="off">56%OFF</span>初回<b>9,600</b>円<span style="font-size:12px">(税込)</span></p>
       </div>
     </div>
   </article>
@@ -392,8 +398,8 @@ footer p{font-size:12px;line-height:1.9}
       <p class="menu__desc">ニキビ、ニキビ跡、シミ、毛穴の開きに。超音波の毛穴洗浄で汚れを落とし、部位ごとに強さを変えたハーブを導入。小顔引き締めと肌別パックまで含んだコースです。</p>
       <p class="menu__spec">施術時間 60分〜／メイクはせずにご来店ください</p>
       <div class="menu__price">
-        <p class="l">通常価格<br><s>22,000円</s></p>
-        <p class="r"><span class="off">56%OFF</span><br>初回<b>9,600</b>円<span style="font-size:12px">(税込)</span></p>
+        <p class="l">通常価格 <s>22,000円</s></p>
+        <p class="r"><span class="off">56%OFF</span>初回<b>9,600</b>円<span style="font-size:12px">(税込)</span></p>
       </div>
     </div>
   </article>
